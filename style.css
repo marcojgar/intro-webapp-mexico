@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    background-color: #ffffff;
+    font-family: 'Arial';
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem; /* Reducido */
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+/* Flexbox para centrar los colores de la bandera */
+.bandera {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Alinea todos los recuadros verticalmente */
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Ajustar cada color de la bandera */
+.color-section {
+    flex: 1; /* Asegura que todos los recuadros ocupen el mismo espacio */
+    margin: 0;
+    padding: 0; /* Elimina el padding para asegurar alineación */
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Tamaño aumentado de los recuadros */
+.recuadro {
+    height: 300px; /* Aumentado */
+    width: 100%;
+    transition: background-color 0.3s ease;
+    border-radius: 0; /* Sin bordes suavizados */
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+}
+
+/* Ajuste especial para el recuadro blanco */
+.blanco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilo del escudo */
+.escudo {
+    font-size: 15px; /* Reducido */
+    font-weight: lighter;
+    color: black;
+    line-height: 1.6; /* Ajuste de línea para centrado vertical */    
+}
+
+/* Alineación de texto */
+h5 {
+    font-size: 0.95rem; /* Reducido */
+    font-weight: lighter;
+    margin-bottom: 10px; /* Reducido */
+}
+
+p {
+    font-size: 16px; /* Reducido */
+    font-weight: lighter;
+    color: #333;
+    margin: 0; /* Elimina el margen para alinear el texto */
+}
+
+/* Estilo de las barras */
+input[type="range"] {
+    width: 80%;
+    margin: 10px auto;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #2c3e50;
+    border: 1px solid #2c3e50;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: #2c3e50;
+    border: 1px solid #2c3e50;
+    border-radius: 50%;
+}
+
+
+
+
+
+
